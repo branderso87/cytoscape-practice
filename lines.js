@@ -1,4 +1,4 @@
-import cytoscape from 'cytoscape'
+// import cytoscape from './node_modules/cytoscape/dist'
 
 const cy = cytoscape({
   container: document.getElementById('cy'),
@@ -23,6 +23,10 @@ const cy = cytoscape({
         'target-arrow-color': 'black',
         'source-arrow-color': 'black',
         'text-outline-color': 'black'
+      })
+    .selector('edge')
+      .css({
+        'line-color': 'white'
       }),
 
   elements: {
@@ -31,6 +35,14 @@ const cy = cytoscape({
          id: 'desktop',
          name: 'Cytoscape',
          href: 'http://cytoscape.org' } },
+      { data: {
+          id: 'middlebury',
+          name: 'Middlebury',
+          href: 'http://fanfiction.net' } },
+      { data: {
+          id: 'chimmijunga',
+          name: 'Chimmijunga',
+          href: 'http://archiveofourown.org' } },
       { data: {
           id: 'js',
           name: 'Cytoscape.js',
