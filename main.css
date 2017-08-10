@@ -1,0 +1,14 @@
+*{
+  margin: 0 auto;
+  box-sizing: border-box;
+ }
+ body{
+   margin: 0;
+ }
+#cy {
+  height: 600px;
+  width: 100%;
+  margin-top: 10%;
+  display: block;
+  background: #8E9AAF;
+}

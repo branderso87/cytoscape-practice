@@ -1,0 +1,22 @@
+{
+  "name": "cytoscape-pr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lines.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/branderso87/cytoscape-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/branderso87/cytoscape-practice/issues"
+  },
+  "homepage": "https://github.com/branderso87/cytoscape-practice#readme",
+  "dependencies": {
+    "cytoscape": "^3.1.4"
+  }
+}
