@@ -16,6 +16,14 @@ const cy = cytoscape({
         'text-outline-color': '#BF1363',
         'background-color': '#BF1363'
       })
+    .selector('node.majorPlotPoint')
+      .css({
+        'background-color': 'white'
+      })
+    .selector('node.storyline')
+      .css({
+        'background-color': '#Ffcc00'
+      })
     .selector(':selected')
       .css({
         'background-color': 'black',
@@ -26,7 +34,8 @@ const cy = cytoscape({
       })
     .selector('edge')
       .css({
-        'line-color': 'white'
+        'line-color': '#Ffcc00',
+        'weight': 5
       }),
 
   elements: {
@@ -37,6 +46,7 @@ const cy = cytoscape({
          href: 'http://cytoscape.org',
          text: ''
        },
+        classes: 'storyline',
         position: {x: 0, y: 100}
       },
       { data: {
@@ -45,6 +55,7 @@ const cy = cytoscape({
           href: 'http://fanfiction.net',
           text: ''
         },
+        classes: 'majorPlotPoint',
         position: {x: 200, y: 100}
       },
       { data: {
@@ -53,6 +64,7 @@ const cy = cytoscape({
           href: 'http://archiveofourown.org',
           text: ''
         },
+        classes: 'majorPlotPoint',
         position: {x: 400, y: 100}
       },
       { data: {
@@ -61,30 +73,37 @@ const cy = cytoscape({
           href: 'http://js.cytoscape.org',
           text: ''
         },
+        classes: 'majorPlotPoint',
         position: {x: 600, y: 100}
       },
       { data: {
           id: 'Rue\'s Death',
           name: 'Rue\'s Death',
+
           href: 'http://js.cytoscape.org',
           text: ''
         },
+        classes: 'majorPlotPoint',
         position: {x: 800, y: 100}
       },
       { data: {
           id: 'The Poison Berries',
           name: 'The Poison Berries',
+
           href: 'http://js.cytoscape.org',
           text: ''
         },
+        classes: 'majorPlotPoint',
         position: {x: 1000, y: 100}
       },
       { data: {
           id: 'Returning Home',
           name: 'Returning Home',
+
           href: 'http://js.cytoscape.org',
           text: ''
         },
+        classes: 'majorPlotPoint',
         position: {x: 1200, y: 100}
       }
     ],
