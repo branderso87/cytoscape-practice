@@ -32,32 +32,90 @@ const cy = cytoscape({
   elements: {
     nodes: [
       { data: {
-         id: 'desktop',
-         name: 'Cytoscape',
-         href: 'http://cytoscape.org' } },
+         id: 'Storyline',
+         name: 'Storyline',
+         href: 'http://cytoscape.org',
+         text: ''
+       },
+        position: {x: 0, y: 100}
+      },
       { data: {
-          id: 'middlebury',
-          name: 'Middlebury',
-          href: 'http://fanfiction.net' } },
+          id: 'The Reaping',
+          name: 'The Reaping',
+          href: 'http://fanfiction.net',
+          text: ''
+        },
+        position: {x: 200, y: 100}
+      },
       { data: {
-          id: 'chimmijunga',
-          name: 'Chimmijunga',
-          href: 'http://archiveofourown.org' } },
+          id: 'Interview',
+          name: 'Interview',
+          href: 'http://archiveofourown.org',
+          text: ''
+        },
+        position: {x: 400, y: 100}
+      },
       { data: {
-          id: 'js',
-          name: 'Cytoscape.js',
-          href: 'http://js.cytoscape.org' } }
+          id: 'The Hunger Games Begin',
+          name: 'The Hunger Games Begin',
+          href: 'http://js.cytoscape.org',
+          text: ''
+        },
+        position: {x: 600, y: 100}
+      },
+      { data: {
+          id: 'Rue\'s Death',
+          name: 'Rue\'s Death',
+          href: 'http://js.cytoscape.org',
+          text: ''
+        },
+        position: {x: 800, y: 100}
+      },
+      { data: {
+          id: 'The Poison Berries',
+          name: 'The Poison Berries',
+          href: 'http://js.cytoscape.org',
+          text: ''
+        },
+        position: {x: 1000, y: 100}
+      },
+      { data: {
+          id: 'Returning Home',
+          name: 'Returning Home',
+          href: 'http://js.cytoscape.org',
+          text: ''
+        },
+        position: {x: 1200, y: 100}
+      }
     ],
     edges: [
       { data: {
-          source: 'desktop',
-          target: 'js' } }
+          source: 'Storyline',
+          target: 'The Reaping' } },
+      { data: {
+          source: 'The Reaping',
+          target: 'Interview' } },
+      { data: {
+          source: 'Interview',
+          target: 'The Hunger Games Begin' } },
+      { data: {
+          source: 'The Hunger Games Begin',
+          target: 'Rue\'s Death' } },
+      { data: {
+          source: 'Rue\'s Death',
+          target: 'The Poison Berries' } },
+      { data: {
+          source: 'The Poison Berries',
+          target: 'Returning Home' } }
     ]
   },
 
   layout: {
-    name: 'grid',
-    padding: 10
+    name: 'preset',
+    fit: true,
+    direct: false,
+    padding: 10,
+    avoidOverlap: true
   }
 })
 
