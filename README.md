@@ -7,7 +7,7 @@ The API is easy to use because it takes JSON to create all visualizations (inclu
   <img width="460" height="300" src="screenshot.png">
 </p>
 
-##Installation
+## Installation
 
 Clone the git repository and use npm to install package.json
 * npm install
